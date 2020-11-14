@@ -1,0 +1,26 @@
+.masthead {
+    .first_link {
+        font-family: "Poppins-Regular";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #2D9CDB;
+        padding-left: 40px;
+        padding-bottom: 15px;
+    }   
+    .masthead_heading {
+        font-family: "Poppins-Regular";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #333333;
+        padding-left: 40px;
+        max-width: 272px;
+    }
+    .masthead_homeImage {
+        border-radius: 18px;
+        padding-bottom: 22px;
+    }
+}
