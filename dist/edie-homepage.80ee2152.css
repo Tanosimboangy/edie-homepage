@@ -130,11 +130,69 @@ body {
           text-decoration: underline;
           color: blue; } }
 
+.section_offeringservices {
+  padding-top: 60px;
+  max-width: 90%;
+  margin-right: 5%;
+  margin-left: 5%; }
+  .section_offeringservices .section_offeringservices--heading {
+    font-family: "Poppins-Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+    padding-bottom: 30px;
+    max-width: 260px; }
+  .section_offeringservices article {
+    max-width: 300px;
+    padding-bottom: 46px;
+    padding: 20px; }
+    .section_offeringservices article h4 {
+      font-family: "Poppins-Regular";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      color: #333333;
+      padding-top: 35px;
+      padding-bottom: 24px; }
+    .section_offeringservices article p {
+      font-family: "Poppins-Regular";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #4F4F4F;
+      max-width: 273px;
+      padding-bottom: 40px; }
+    .section_offeringservices article button {
+      font-family: "Poppins-Regular";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: blue;
+      border: none;
+      border-radius: 12px;
+      padding: 10px 10px;
+      outline: none;
+      cursor: pointer; }
+    .section_offeringservices article button:hover {
+      box-shadow: 2px 2px 6px blue;
+      background-color: white;
+      font-weight: 600; }
+  .section_offeringservices article:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    border-radius: 24px;
+    cursor: pointer; }
+
 .masthead .first_link {
   font-family: "Poppins-Regular";
   padding-bottom: 15px;
   font-style: normal;
-  padding-left: 8%; }
+  padding-left: 5%; }
   .masthead .first_link a {
     font-weight: 500;
     font-size: 12px;
@@ -151,7 +209,7 @@ body {
   max-width: 272px;
   margin-right: auto;
   padding-bottom: 20px;
-  padding-left: 8%; }
+  padding-left: 5%; }
 
 .masthead .masthead_homeImage {
   border-radius: 18px; }
@@ -228,7 +286,7 @@ body {
     .article .article_form .form_button {
       position: absolute;
       top: 1px;
-      right: 2px;
+      right: 1px;
       border: none;
       outline: none;
       padding: 10px 20px;
