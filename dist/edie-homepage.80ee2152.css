@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Heebo-Bold";
+  src: local(Heebo-Bold), url(/Heebo-Bold.eeab2294.woff2) format("woff2"), url(/Heebo-Bold.45b4acf4.woff) format("woff"); }
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: local(Montserrat-SemiBold), url(/Montserrat-SemiBold.646e65de.woff2) format("woff2"), url(/Montserrat-SemiBold.3c4e29cc.woff) format("woff"); }
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: local(Poppins-Bold), url(/Poppins-Bold.93a7e675.woff2) format("woff2"), url(/Poppins-Bold.4acc6197.woff) format("woff"); }
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local(Poppins-Regular), url(/Poppins-Regular.b609ad6c.woff2) format("woff2"), url(/Poppins-Regular.9ae34984.woff) format("woff"); }
+
+body ul {
+  margin: 0;
+  padding: 0; }
+  body ul li {
+    list-style: none; }
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  margin: 0; }
+
+body a {
+  text-decoration: none; }
+
+body p {
+  margin: 0; }
+
+body img {
+  max-width: 100%; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 48px; }
+  .header h1 {
+    font-family: "Heebo-Bold";
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 35px;
+    color: #333333;
+    padding-left: 10px;
+    padding-top: 13px; }
+  .header svg {
+    width: 21px;
+    height: 21px;
+    cursor: pointer; }
+  .header input {
+    position: absolute;
+    top: 14px;
+    right: -1px;
+    width: 17px;
+    height: 17px;
+    opacity: 0; }
+  .header .header_navigation {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    display: none; }
+  .header input:checked ~ .header_navigation {
+    top: 50px;
+    right: 0;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+    padding-top: 80px;
+    box-shadow: 3px 3px 12px black; }
+    .header input:checked ~ .header_navigation .header_navigation--lists li {
+      padding-bottom: 10px;
+      padding-top: 10px; }
+      .header input:checked ~ .header_navigation .header_navigation--lists li a {
+        font-family: "Poppins-Regular";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #333333;
+        transition: clip-path 275ms ease; }
+      .header input:checked ~ .header_navigation .header_navigation--lists li a:hover {
+        font-weight: 700;
+        text-decoration: underline;
+        text-shadow: 1px 1px 1px black;
+        color: blue; }
+
+@media (min-width: 720px) {
+  .header {
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 96px; }
+    .header h1 {
+      font-family: "Heebo-Bold";
+      font-size: 36px;
+      line-height: 53px; }
+    .header svg {
+      display: none; }
+    .header input {
+      display: none; }
+    .header .header_navigation {
+      position: initial;
+      display: flex; }
+      .header .header_navigation .header_navigation--lists {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline; }
+        .header .header_navigation .header_navigation--lists li:not(:last-child) {
+          padding-right: 16px; }
+        .header .header_navigation .header_navigation--lists li a {
+          font-family: "Poppins-Regular";
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 36px;
+          color: #333333; }
+        .header .header_navigation .header_navigation--lists li a:hover {
+          font-weight: 700;
+          text-decoration: underline;
+          text-shadow: 1px 1px 1px black;
+          color: blue; } }
+
+
+/*# sourceMappingURL=/edie-homepage.80ee2152.css.map */

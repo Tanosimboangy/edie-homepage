@@ -1,0 +1,124 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 48px;
+    h1 {
+        font-family: "Heebo-Bold";
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 35px;
+        color: #333333;
+        padding-left: 10px;
+        padding-top: 13px;
+    }
+    svg {
+        width: 21px;
+        height: 21px;
+        cursor: pointer;;
+    }
+    input {
+        position: absolute;
+        top: 14px;
+        right: -1px;
+        width: 17px;
+        height: 17px;
+        opacity: 0;
+    }
+    .header_navigation {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        display: none;
+    }
+    input:checked ~ .header_navigation {
+        top: 50px;
+        right: 0;
+        width: 90%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 16px;
+        padding: 16px;
+        padding-top: 80px;
+        box-shadow: 3px 3px 12px black;
+        .header_navigation--lists {
+            li {
+                padding-bottom: 10px;
+                padding-top: 10px;
+                a {
+                    font-family: "Poppins-Regular";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #333333;
+                    transition: clip-path 275ms ease;
+                }
+                a:hover {
+                    font-weight: 700;
+                    text-decoration: underline;
+                    text-shadow: 1px 1px 1px black;
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: 720px) {
+    .header {
+        max-width: 95%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: 96px;
+        h1 {
+            font-family: "Heebo-Bold";
+            font-size: 36px;
+            line-height: 53px;
+        }
+        svg {
+            display: none;
+        }
+        input {
+            display: none;
+        }
+        .header_navigation {
+            position: initial;
+            display: flex;
+            .header_navigation--lists {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: baseline;
+                li:not(:last-child) {
+                    padding-right: 16px;
+                }
+                li {
+                    a {
+                        font-family: "Poppins-Regular";
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 36px;
+                        color: #333333
+                    }
+                    a:hover {
+                        font-weight: 700;
+                        text-decoration: underline;
+                        text-shadow: 1px 1px 1px black;
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+    
+}
