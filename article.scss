@@ -1,0 +1,35 @@
+.article {
+    padding-top: 22px;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    .article_heading {
+        font-family: "Poppins-Regular";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #333333;
+        padding-bottom: 33px;
+    }
+    .aritcle_paragraph {
+        font-family: "Poppins-Regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #4F4F4F;
+        max-width: 275px;
+        padding-bottom: 31px;
+    }
+    .article_form {
+        .form_paragraph {
+            font-family: "Poppins-Regular";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 15px;
+            color: #828282;
+        }
+    }
+}
