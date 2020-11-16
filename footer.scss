@@ -1,0 +1,147 @@
+.footer {
+    background: #100E1D;
+    font-style: normal;
+    div {
+        .footer_lists {
+            padding-top: 36px;
+            .footer_lists--navigation {
+                font-family: "Poppins-Regular";
+                .navigation_container {
+                    padding-left: 16%;
+                    padding-bottom: 64px;
+                    .footer_navigation--lists {
+                        li {
+                            font-size: 18px;
+                            line-height: 200%;
+                            padding: 0;
+                            a {
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_lists--links {
+                padding-left: 16%;
+                h2 {
+                    font-family: "Heebo-Bold";                
+                    font-weight: 800;
+                    font-size: 36px;
+                    line-height: 53px;
+                    color: #F2F2F2;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    max-width: 94px;
+                    justify-content: space-between;
+                    padding-bottom: 56px;
+                    li {
+                        padding: 0;
+                        svg {
+                            fill: white;
+                        }
+                    }
+                }
+            }
+            li:last-of-type {
+                padding-left: 16%;
+                font-family: "Poppins-Regular";
+                font-weight: 500;
+                .footer_paragraph {
+                    font-size: 10px;
+                    line-height: 15px;
+                    color: #828282;
+                }
+                .article_form {
+                    font-family: "Poppins-Regular";
+                    position: relative;
+                    background: #F2F2F2;
+                    border-radius: 12px;
+                    border: none;
+                    outline: none;
+                    max-width: 300px;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 10px 16px;
+                    .form_input--email {
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: blue;
+                        font-weight: 700;
+                        background-color: #89898900;
+                        border: none;
+                        outline: none;
+                        width: 250px;
+                    }
+                    .form_button {
+                        position: absolute;
+                        top: 1px;
+                        right: 1px;
+                        border: none;
+                        outline: none;
+                        padding: 10px 20px;
+                        border-radius: 12px;            
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #F2F2F2;
+                        background-color: blue;
+                    }
+                    .form_button:hover {
+                        box-shadow: 1px 1px 1px blue;
+                    }
+                }
+            }
+        }
+        .footer_lastparagraph {
+            padding-top: 133px;
+            text-align: center;
+            font-family: "Montserrat-SemiBold"; 
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #A9A9A9;
+            padding-bottom: 45px;
+        }
+    }
+}
+
+@media(min-width: 720px) {
+    .footer {
+        div {
+            max-width: 90%;
+            margin: auto;
+            .footer_lists {
+                padding-top: 46px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .footer_lists--navigation {
+                    .navigation_container {
+                        padding-bottom: 0;
+                        padding-left: 0;
+                    }
+                }
+                .footer_lists--links {
+                    padding-left: 0;
+                    padding-bottom: 0;
+                }
+                li:last-of-type {
+                    padding-left: 0;
+                    padding-bottom: 0;
+                }
+            }
+            .footer_lastparagraph {
+                padding-top: 133px;
+                text-align: center;
+                font-family: "Montserrat-SemiBold";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #A9A9A9;
+                padding-bottom: 45px;
+            }
+        }
+    }
+}

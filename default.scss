@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    padding: 16px;
     ul {
         margin: 0;
         padding: 0;
@@ -19,5 +18,11 @@ body {
     }
     img {
         max-width: 100%;
+    }
+    .header {
+        padding: 16px;
+    }
+    .main {
+        padding: 16px;
     }
 }

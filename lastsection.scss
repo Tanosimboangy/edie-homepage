@@ -1,0 +1,27 @@
+.lastsection {
+    font-family: "Poppins-Regular";
+    font-style: normal;
+    max-width: 90%;
+    margin: auto;
+    .lastsection_heading {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #333333;
+        max-width: 350px;
+        padding-bottom: 18px;
+    }
+    .carlos_profile {
+        display: flex;
+        flex-direction: row;
+        li:first-of-type {
+            img {
+                max-width: 25%;
+                border-radius: 12px;
+            }
+        }
+        li:last-of-type {
+            padding-left: 20px;
+        }
+    }
+}

@@ -3,6 +3,9 @@
     font-style: normal;
     padding-bottom: 100px;
     .team_info {
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
         .team_subheading {
             font-weight: 500;
             font-size: 18px;
@@ -14,7 +17,7 @@
             font-size: 36px;
             line-height: 54px;
             color: #333333;
-            max-width: 280px;
+            max-width: 340px;
             padding-bottom: 14px;
         }
         .team_paragraph {
@@ -27,7 +30,9 @@
         }
     }
     .team_images {
-        max-width: 300px;
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
         ul {
             display: flex;
             flex-direction: row;
@@ -35,9 +40,12 @@
             align-items: center;
             li {
                 img {
-                    max-width: 144px;
+                    max-width: 100%;
                     border-radius: 24px;
                 }
+            }
+            li:first-of-type {
+                padding-right: 4%;
             }
             li:last-child {
                 ul {
@@ -53,29 +61,33 @@
     }
 }
 
-// @media(min-width: 400px) {
-    
-// }
 @media(min-width: 720px) {
     .section_team {
         max-width: 75%;
-        margin: auto;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        .team_info {
+            margin-left: 0;
+            margin-right: 0;
+        }
         .team_images {
-            max-width: 500px;
+            max-width: 100%;
+            margin-left: 0;
+            margin-right: 0;
             margin: auto;
             ul {
                 li {
                     img {
-                        max-width: 300px;
+                        max-width: 100%;
                         border-radius: 24px;
                     }
                 }
                 li:first-of-type {
-                    padding-right: 20px;
+                    padding-right: 4%;
                 }
                 li:last-child {
                     .team_images--second {
