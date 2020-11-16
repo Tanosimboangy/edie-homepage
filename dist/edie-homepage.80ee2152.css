@@ -97,7 +97,7 @@ body {
 
 @media (min-width: 720px) {
   .header {
-    max-width: 90%;
+    max-width: 95%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -121,7 +121,7 @@ body {
         justify-content: space-between;
         align-items: baseline; }
         .header .header_navigation .header_navigation--lists li:not(:last-child) {
-          padding-right: 20px; }
+          padding-right: 50px; }
         .header .header_navigation .header_navigation--lists li a {
           font-family: "Poppins-Regular";
           font-weight: 500;
