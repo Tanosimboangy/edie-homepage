@@ -80,6 +80,9 @@
 
 @media(min-width: 720px) {
     .article {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
         .article_heading {
             color: #333333;
             padding-bottom: 33px;

@@ -34,14 +34,19 @@ body {
   body .main {
     padding: 16px; }
 
-.header {
+@media (min-width: 720px) {
+  body .main {
+    padding-left: 0;
+    padding-right: 0; } }
+
+body .header {
   display: flex;
   flex-direction: row;
   position: relative;
   justify-content: space-between;
   align-items: baseline;
   padding-bottom: 48px; }
-  .header h1 {
+  body .header h1 {
     font-family: "Heebo-Bold";
     font-weight: 800;
     font-size: 24px;
@@ -49,25 +54,25 @@ body {
     color: #333333;
     padding-left: 10px;
     padding-top: 13px; }
-  .header svg {
+  body .header svg {
     width: 21px;
     height: 21px;
     cursor: pointer; }
-  .header input {
+  body .header input {
     position: absolute;
-    top: 14px;
-    right: -1px;
+    top: 31px;
+    right: 15px;
     width: 17px;
     height: 17px;
     opacity: 0; }
-  .header .header_navigation {
+  body .header .header_navigation {
     position: absolute;
     top: 0;
     right: -100%;
     display: none; }
-  .header input:checked ~ .header_navigation {
-    top: 50px;
-    right: 0;
+  body .header input:checked ~ .header_navigation {
+    top: 72px;
+    right: 2%;
     width: 90%;
     height: 400px;
     display: flex;
@@ -77,11 +82,12 @@ body {
     border-radius: 16px;
     padding: 16px;
     padding-top: 80px;
-    box-shadow: 3px 3px 12px black; }
-    .header input:checked ~ .header_navigation .header_navigation--lists li {
+    box-shadow: 3px 3px 12px black;
+    z-index: 1; }
+    body .header input:checked ~ .header_navigation .header_navigation--lists li {
       padding-bottom: 10px;
       padding-top: 10px; }
-      .header input:checked ~ .header_navigation .header_navigation--lists li a {
+      body .header input:checked ~ .header_navigation .header_navigation--lists li a {
         font-family: "Poppins-Regular";
         font-style: normal;
         font-weight: 500;
@@ -89,46 +95,50 @@ body {
         line-height: 36px;
         color: #333333;
         transition: clip-path 275ms ease; }
-      .header input:checked ~ .header_navigation .header_navigation--lists li a:hover {
+      body .header input:checked ~ .header_navigation .header_navigation--lists li a:hover {
         font-weight: 700;
         text-decoration: underline;
         text-shadow: 1px 1px 1px black;
         color: blue; }
 
-@media (min-width: 720px) {
-  .header {
+@media (min-width: 800px) {
+  body .header {
     max-width: 95%;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
     padding-bottom: 96px; }
-    .header h1 {
-      font-family: "Heebo-Bold";
+    body .header h1 {
       font-size: 36px;
-      line-height: 53px; }
-    .header svg {
+      line-height: 53px;
+      padding-left: 0;
+      padding-top: 42px; }
+    body .header svg {
       display: none; }
-    .header input {
+    body .header input {
       display: none; }
-    .header .header_navigation {
+    body .header .header_navigation {
       position: initial;
       display: flex; }
-      .header .header_navigation .header_navigation--lists {
+      body .header .header_navigation .header_navigation--lists {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline; }
-        .header .header_navigation .header_navigation--lists li:not(:last-child) {
-          padding-right: 50px; }
-        .header .header_navigation .header_navigation--lists li a {
+        body .header .header_navigation .header_navigation--lists li:not(:last-child) {
+          padding-right: 40px; }
+        body .header .header_navigation .header_navigation--lists li a {
           font-family: "Poppins-Regular";
           font-weight: 500;
           font-size: 20px;
           line-height: 36px;
           color: #333333; }
-        .header .header_navigation .header_navigation--lists li a:hover {
+        body .header .header_navigation .header_navigation--lists li a:hover {
           font-weight: 700;
           text-decoration: underline;
           color: blue; } }
@@ -147,7 +157,7 @@ body {
     color: #333333;
     max-width: 260px; }
   .section_offeringservices .article_container article {
-    max-width: 250px;
+    max-width: 220px;
     padding-top: 16px;
     padding-bottom: 32px;
     padding-left: 20px;
@@ -226,7 +236,7 @@ body {
 @media (min-width: 720px) {
   .section_offeringservices {
     padding-top: 100px;
-    max-width: 75%;
+    max-width: 80%;
     margin: auto;
     padding-bottom: 100px; }
     .section_offeringservices .section_offeringservices--heading {
@@ -287,9 +297,8 @@ body {
 
 @media (min-width: 400px) {
   .section_listofgooddesign {
-    max-width: 75%;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
+    max-width: 80%;
+    margin: auto;
     margin-bottom: 120px; }
     .section_listofgooddesign .listofgooddesign_heading {
       padding-bottom: 0;
@@ -445,6 +454,9 @@ body {
     .masthead .first_link a {
       font-size: 20px;
       line-height: 27px; }
+    .masthead .first_link a:hover {
+      color: blue;
+      font-weight: 700; }
   .masthead .masthead_heading {
     font-size: 48px;
     line-height: 50px;
@@ -452,9 +464,9 @@ body {
     padding-bottom: 42px;
     padding-left: 16%; }
   .masthead .masthead_homeImage {
-    max-width: 90%;
-    margin-left: 5%;
-    margin-right: 5%; } }
+    max-width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%; } }
 
 .article {
   padding-top: 22px;
@@ -528,34 +540,38 @@ body {
     box-shadow: 2px 2px 10px black; }
 
 @media (min-width: 720px) {
-  .article .article_heading {
-    color: #333333;
-    padding-bottom: 33px;
-    font-size: 48px;
-    line-height: 50px;
-    max-width: 460px;
-    padding-left: 16%;
-    margin-right: auto; }
-  .article .aritcle_paragraph {
-    font-size: 18px;
-    line-height: 27px;
-    padding-left: 16%;
-    margin-right: auto;
-    max-width: 460px;
-    padding-bottom: 42px; }
-  .article .aritcle_extra--paragraph {
-    font-size: 14px;
-    line-height: 21px;
-    padding-bottom: 10px;
-    padding-left: 16%; }
-  .article .article_form {
-    margin-left: 16%; }
-    .article .article_form .form_input--email {
+  .article {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+    .article .article_heading {
+      color: #333333;
+      padding-bottom: 33px;
+      font-size: 48px;
+      line-height: 50px;
+      max-width: 460px;
+      padding-left: 16%;
+      margin-right: auto; }
+    .article .aritcle_paragraph {
       font-size: 18px;
-      line-height: 27px; }
-    .article .article_form .form_button {
-      font-size: 18px;
-      line-height: 27px; } }
+      line-height: 27px;
+      padding-left: 16%;
+      margin-right: auto;
+      max-width: 460px;
+      padding-bottom: 42px; }
+    .article .aritcle_extra--paragraph {
+      font-size: 14px;
+      line-height: 21px;
+      padding-bottom: 10px;
+      padding-left: 16%; }
+    .article .article_form {
+      margin-left: 16%; }
+      .article .article_form .form_input--email {
+        font-size: 18px;
+        line-height: 27px; }
+      .article .article_form .form_button {
+        font-size: 18px;
+        line-height: 27px; } }
 
 .footer {
   background: #100E1D;

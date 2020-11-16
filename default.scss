@@ -26,3 +26,12 @@ body {
         padding: 16px;
     }
 }
+
+@media(min-width: 720px) {
+    body {
+        .main {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

@@ -37,6 +37,10 @@
                 font-size: 20px;
                 line-height: 27px;
             }
+            a:hover {
+                color: blue;
+                font-weight: 700;
+            }
         }
         .masthead_heading {
             font-size: 48px;
@@ -46,9 +50,9 @@
             padding-left: 16%;
         }
         .masthead_homeImage {
-            max-width: 90%;
-            margin-left: 5%;
-            margin-right: 5%;
+            max-width: 95%;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
         }
     }
 }
