@@ -133,8 +133,8 @@ body {
 .section_offeringservices {
   padding-top: 60px;
   max-width: 90%;
-  margin-right: 5%;
-  margin-left: 5%; }
+  margin-right: 4%;
+  margin-left: 4%; }
   .section_offeringservices .section_offeringservices--heading {
     font-family: "Poppins-Regular";
     font-style: normal;
@@ -144,11 +144,11 @@ body {
     color: #333333;
     padding-bottom: 30px;
     max-width: 260px; }
-  .section_offeringservices article {
+  .section_offeringservices .article_container article {
     max-width: 300px;
     padding-bottom: 46px;
-    padding: 20px; }
-    .section_offeringservices article svg {
+    padding: 16px; }
+    .section_offeringservices .article_container article svg {
       background-color: blue;
       padding: 16px;
       border-radius: 12px;
@@ -161,10 +161,10 @@ body {
     transform: rotate(0); }
   100% {
     transform: rotate(360deg); } }
-    .section_offeringservices article svg:hover {
+    .section_offeringservices .article_container article svg:hover {
       animation: none;
       transform: rotate(0deg); }
-    .section_offeringservices article h4 {
+    .section_offeringservices .article_container article h4 {
       font-family: "Poppins-Regular";
       font-style: normal;
       font-weight: bold;
@@ -173,7 +173,7 @@ body {
       color: #333333;
       padding-top: 35px;
       padding-bottom: 24px; }
-    .section_offeringservices article p {
+    .section_offeringservices .article_container article p {
       font-family: "Poppins-Regular";
       font-style: normal;
       font-weight: normal;
@@ -182,7 +182,7 @@ body {
       color: #4F4F4F;
       max-width: 273px;
       padding-bottom: 40px; }
-    .section_offeringservices article button {
+    .section_offeringservices .article_container article button {
       font-family: "Poppins-Regular";
       font-style: normal;
       font-weight: 500;
@@ -193,16 +193,31 @@ body {
       border-radius: 12px;
       padding: 10px 10px;
       outline: none;
-      cursor: pointer; }
-    .section_offeringservices article button:hover {
-      box-shadow: 2px 2px 6px blue;
+      cursor: pointer;
       background-color: white;
+      box-shadow: 1px 1px 3px black; }
+    .section_offeringservices .article_container article button:hover {
+      box-shadow: 2px 2px 6px blue;
       font-weight: 600; }
   .section_offeringservices article:hover {
     background: #FFFFFF;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 5px black;
     border-radius: 24px;
     cursor: pointer; }
+  .section_offeringservices .article_design {
+    margin-bottom: 40px; }
+  .section_offeringservices .article_frontEnd {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-bottom: 40px; }
+    .section_offeringservices .article_frontEnd a svg {
+      background: #27AE60; }
+  .section_offeringservices .article_backEnd {
+    margin-bottom: 80px; }
+    .section_offeringservices .article_backEnd a svg {
+      background: #EB5757; }
 
 .masthead .first_link {
   font-family: "Poppins-Regular";
