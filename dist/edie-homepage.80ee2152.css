@@ -258,7 +258,6 @@ body {
     padding-bottom: 20px; }
   .section_listofgooddesign .listofgooddesign_lists li ul li img {
     max-width: 95%;
-    margin: auto;
     background: #F2C94C;
     border-radius: 24px; }
   .section_listofgooddesign .listofgooddesign_lists li ul li p {
@@ -315,6 +314,34 @@ body {
       top: 100%;
       right: 0;
       margin-top: 0; } }
+
+.section_team {
+  font-family: "Poppins-Regular";
+  font-style: normal; }
+  .section_team .team_info .team_subheading {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #EB5757; }
+  .section_team .team_info .team_heading {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: #333333;
+    max-width: 280px;
+    padding-bottom: 14px; }
+  .section_team .team_info .team_paragraph {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+    max-width: 273px;
+    padding-bottom: 36px; }
+  .section_team .team_images {
+    max-width: 100%; }
+    .section_team .team_images img {
+      max-width: 144px;
+      border-radius: 24px; }
 
 .masthead .first_link {
   font-family: "Poppins-Regular";
