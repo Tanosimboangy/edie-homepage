@@ -317,7 +317,8 @@ body {
 
 .section_team {
   font-family: "Poppins-Regular";
-  font-style: normal; }
+  font-style: normal;
+  padding-bottom: 100px; }
   .section_team .team_info .team_subheading {
     font-weight: 500;
     font-size: 18px;
@@ -338,10 +339,40 @@ body {
     max-width: 273px;
     padding-bottom: 36px; }
   .section_team .team_images {
-    max-width: 100%; }
-    .section_team .team_images img {
-      max-width: 144px;
-      border-radius: 24px; }
+    max-width: 300px; }
+    .section_team .team_images ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .section_team .team_images ul li img {
+        max-width: 144px;
+        border-radius: 24px; }
+      .section_team .team_images ul li:last-child ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .section_team .team_images ul li:last-child ul .team_images--second {
+          padding-bottom: 10px; }
+
+@media (min-width: 720px) {
+  .section_team {
+    max-width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .section_team .team_images {
+      max-width: 500px;
+      margin: auto; }
+      .section_team .team_images ul li img {
+        max-width: 300px;
+        border-radius: 24px; }
+      .section_team .team_images ul li:first-of-type {
+        padding-right: 20px; }
+      .section_team .team_images ul li:last-child .team_images--second {
+        padding-bottom: 20px; } }
 
 .masthead .first_link {
   font-family: "Poppins-Regular";
