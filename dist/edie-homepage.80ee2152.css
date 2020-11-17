@@ -31,8 +31,6 @@ body {
     max-width: 100%; }
   body .header {
     padding: 16px; }
-  body .main {
-    padding: 16px; }
 
 body .header {
   display: flex;
@@ -317,7 +315,9 @@ body .header {
 .section_team {
   font-family: "Poppins-Regular";
   font-style: normal;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  padding-left: 16px;
+  padding-right: 16px; }
   .section_team .team_info {
     max-width: 90%;
     margin-left: 5%;
@@ -332,7 +332,7 @@ body .header {
       font-size: 36px;
       line-height: 54px;
       color: #333333;
-      max-width: 340px;
+      max-width: 330px;
       padding-bottom: 14px; }
     .section_team .team_info .team_paragraph {
       font-weight: normal;
@@ -341,30 +341,28 @@ body .header {
       color: #4F4F4F;
       max-width: 273px;
       padding-bottom: 36px; }
-  .section_team .team_images {
-    max-width: 90%;
-    margin-left: 5%;
-    margin-right: 5%; }
-    .section_team .team_images ul {
+  .section_team .team_images ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .section_team .team_images ul li img {
+      max-width: 100%;
+      border-radius: 24px; }
+    .section_team .team_images ul li:first-of-type {
+      padding-right: 4%; }
+    .section_team .team_images ul li:last-child ul {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center; }
-      .section_team .team_images ul li img {
-        max-width: 100%;
-        border-radius: 24px; }
-      .section_team .team_images ul li:first-of-type {
-        padding-right: 4%; }
-      .section_team .team_images ul li:last-child ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; }
-        .section_team .team_images ul li:last-child ul .team_images--second {
-          padding-bottom: 10px; }
+      flex-direction: column;
+      justify-content: space-between; }
+      .section_team .team_images ul li:last-child ul .team_images--second {
+        padding-bottom: 10px; }
 
 @media (min-width: 720px) {
   .section_team {
-    max-width: 80%;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 85%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -373,18 +371,13 @@ body .header {
     .section_team .team_info {
       margin-left: 0;
       margin-right: 0; }
-    .section_team .team_images {
+    .section_team .team_images ul li img {
       max-width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-      margin: auto; }
-      .section_team .team_images ul li img {
-        max-width: 100%;
-        border-radius: 24px; }
-      .section_team .team_images ul li:first-of-type {
-        padding-right: 4%; }
-      .section_team .team_images ul li:last-child .team_images--second {
-        padding-bottom: 20px; } }
+      border-radius: 24px; }
+    .section_team .team_images ul li:first-of-type {
+      padding-right: 4%; }
+    .section_team .team_images ul li:last-child .team_images--second {
+      padding-bottom: 20px; } }
 
 .lastsection {
   font-family: "Poppins-Regular";
@@ -407,52 +400,56 @@ body .header {
     .lastsection .carlos_profile li:last-of-type {
       padding-left: 20px; }
 
-.masthead .first_link {
-  font-family: "Poppins-Regular";
-  padding-bottom: 15px;
-  font-style: normal;
-  padding-left: 5%; }
-  .masthead .first_link a {
+.masthead {
+  padding-left: 16px;
+  padding-right: 16px; }
+  .masthead .first_link {
+    font-family: "Poppins-Regular";
+    padding-bottom: 15px;
+    font-style: normal;
+    padding-left: 5%; }
+    .masthead .first_link a {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      color: #2D9CDB; }
+  .masthead .masthead_heading {
+    font-family: "Poppins-Regular";
+    font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: #2D9CDB; }
-
-.masthead .masthead_heading {
-  font-family: "Poppins-Regular";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  color: #333333;
-  max-width: 272px;
-  margin-right: auto;
-  padding-bottom: 20px;
-  padding-left: 5%; }
-
-.masthead .masthead_homeImage {
-  border-radius: 18px; }
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+    max-width: 272px;
+    margin-right: auto;
+    padding-bottom: 20px;
+    padding-left: 5%; }
+  .masthead .masthead_homeImage {
+    border-radius: 18px; }
 
 @media (min-width: 720px) {
-  .masthead .first_link {
-    padding-bottom: 18px;
-    padding-left: 16%; }
-    .masthead .first_link a {
-      font-size: 20px;
-      line-height: 27px; }
-    .masthead .first_link a:hover {
-      color: blue;
-      font-weight: 700; }
-  .masthead .masthead_heading {
-    font-size: 48px;
-    line-height: 50px;
-    max-width: 543px;
-    padding-bottom: 42px;
-    padding-left: 16%; }
-  .masthead .masthead_homeImage {
-    max-width: 95%;
-    margin-left: 2.5%;
-    margin-right: 2.5%; } }
+  .masthead {
+    padding-left: 0;
+    padding-right: 0; }
+    .masthead .first_link {
+      padding-bottom: 18px;
+      padding-left: 16%; }
+      .masthead .first_link a {
+        font-size: 20px;
+        line-height: 27px; }
+      .masthead .first_link a:hover {
+        color: blue;
+        font-weight: 700; }
+    .masthead .masthead_heading {
+      font-size: 48px;
+      line-height: 50px;
+      max-width: 543px;
+      padding-bottom: 42px;
+      padding-left: 16%; }
+    .masthead .masthead_homeImage {
+      max-width: 95%;
+      margin-left: 2.5%;
+      margin-right: 2.5%; } }
 
 .article {
   padding-top: 22px;
@@ -652,7 +649,7 @@ body .header {
 
 @media (min-width: 720px) {
   .footer div {
-    max-width: 90%;
+    max-width: 85%;
     margin: auto; }
     .footer div .footer_lists {
       padding-top: 46px;

@@ -1,4 +1,6 @@
 .masthead {
+    padding-left: 16px;
+    padding-right: 16px;
     .first_link {
         font-family: "Poppins-Regular";
         padding-bottom: 15px;
@@ -30,6 +32,8 @@
 
 @media(min-width: 720px) {
     .masthead {
+        padding-left: 0;
+        padding-right: 0;
         .first_link {
             padding-bottom: 18px;
             padding-left: 16%;

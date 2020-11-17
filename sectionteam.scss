@@ -2,6 +2,8 @@
     font-family: "Poppins-Regular";
     font-style: normal;
     padding-bottom: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
     .team_info {
         max-width: 90%;
         margin-left: 5%;
@@ -17,7 +19,7 @@
             font-size: 36px;
             line-height: 54px;
             color: #333333;
-            max-width: 340px;
+            max-width: 330px;
             padding-bottom: 14px;
         }
         .team_paragraph {
@@ -30,9 +32,9 @@
         }
     }
     .team_images {
-        max-width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        // max-width: 90%;
+        // margin-left: 5%;
+        // margin-right: 5%;
         ul {
             display: flex;
             flex-direction: row;
@@ -63,7 +65,9 @@
 
 @media(min-width: 720px) {
     .section_team {
-        max-width: 80%;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 85%;
         margin: auto;
         display: flex;
         flex-direction: row;
@@ -74,10 +78,8 @@
             margin-right: 0;
         }
         .team_images {
-            max-width: 100%;
-            margin-left: 0;
-            margin-right: 0;
-            margin: auto;
+            // max-width: 100%;
+            // margin: auto;
             ul {
                 li {
                     img {
