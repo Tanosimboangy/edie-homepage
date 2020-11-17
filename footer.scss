@@ -17,6 +17,10 @@
                             a {
                                 color: #FFFFFF;
                             }
+                            a:hover {
+                                color: orange;
+                                font-weight: 700;
+                            }
                         }
                     }
                 }
@@ -38,8 +42,13 @@
                     padding-bottom: 56px;
                     li {
                         padding: 0;
-                        svg {
-                            fill: white;
+                        a {
+                            svg {
+                                fill: white;
+                            }
+                            svg:hover {
+                                fill: red;
+                            }
                         }
                     }
                 }
@@ -125,6 +134,9 @@
                 .footer_lists--links {
                     padding-left: 0;
                     padding-bottom: 0;
+                    li:not(:last-of-type) {
+                        padding-right: 16px;
+                    }
                 }
                 li:last-of-type {
                     padding-left: 0;
