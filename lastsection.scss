@@ -3,25 +3,54 @@
     font-style: normal;
     max-width: 90%;
     margin: auto;
+    padding-bottom: 100px;
     .lastsection_heading {
         font-weight: 500;
         font-size: 24px;
         line-height: 36px;
         color: #333333;
-        max-width: 350px;
-        padding-bottom: 18px;
+        max-width: 850px;
+        padding-bottom: 36px;
     }
-    .carlos_profile {
+    a {
         display: flex;
         flex-direction: row;
-        li:first-of-type {
-            img {
-                max-width: 25%;
-                border-radius: 12px;
+        img {   
+            max-width: 80px;
+            height: 80px;
+            border-radius: 12px;
+        }
+        .carlos_profile {
+            padding-left: 20px;
+            p {
+                font-family: "Poppins-Regular";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 36px;
+                color: #333333;
+                padding-bottom: 12px;
+            }
+            small {
+                font-family: "Poppins-Regular";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+                color: #828282;
             }
         }
-        li:last-of-type {
-            padding-left: 20px;
+    }    
+}
+
+@media(min-width: 720px) {
+    .lastsection {
+        max-width: 85%;
+        margin: auto;
+        a {
+            .carlos_profile {
+                padding-left: 40px;
+            }
         }
-    }
+    }   
 }

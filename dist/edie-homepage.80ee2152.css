@@ -150,11 +150,11 @@ body .header {
     color: #333333;
     max-width: 260px; }
   .section_offeringservices .article_container article {
-    max-width: 220px;
-    padding-top: 16px;
+    max-width: 250px;
+    padding-top: 35px;
     padding-bottom: 32px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 45px;
+    padding-right: 35px;
     margin-top: 42px; }
     .section_offeringservices .article_container article svg {
       background-color: blue;
@@ -185,7 +185,7 @@ body .header {
       font-size: 16px;
       line-height: 24px;
       color: #4F4F4F;
-      max-width: 273px;
+      max-width: 230px;
       padding-bottom: 40px; }
     .section_offeringservices .article_container article button {
       font-family: "Poppins-Regular";
@@ -244,7 +244,7 @@ body .header {
       .section_offeringservices .article_container article {
         margin-bottom: 0; }
         .section_offeringservices .article_container article p {
-          max-width: 280px; }
+          max-width: 230px; }
       .section_offeringservices .article_container .article_backEnd {
         margin-bottom: 0; } }
 
@@ -252,7 +252,9 @@ body .header {
   position: relative;
   margin-bottom: 100px;
   font-family: "Poppins-Regular";
-  font-style: normal; }
+  font-style: normal;
+  padding-left: 16px;
+  padding-right: 16px; }
   .section_listofgooddesign .listofgooddesign_heading {
     font-weight: 500;
     font-size: 24px;
@@ -293,7 +295,9 @@ body .header {
     max-width: 85%;
     margin-left: 7.25%;
     margin-left: 7.25%;
-    margin-bottom: 240px; }
+    margin-bottom: 240px;
+    padding-left: 0;
+    padding-right: 0; }
     .section_listofgooddesign .listofgooddesign_heading {
       padding-bottom: 0;
       max-width: 448px;
@@ -383,22 +387,46 @@ body .header {
   font-family: "Poppins-Regular";
   font-style: normal;
   max-width: 90%;
-  margin: auto; }
+  margin: auto;
+  padding-bottom: 100px; }
   .lastsection .lastsection_heading {
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
     color: #333333;
-    max-width: 350px;
-    padding-bottom: 18px; }
-  .lastsection .carlos_profile {
+    max-width: 850px;
+    padding-bottom: 36px; }
+  .lastsection a {
     display: flex;
     flex-direction: row; }
-    .lastsection .carlos_profile li:first-of-type img {
-      max-width: 25%;
+    .lastsection a img {
+      max-width: 80px;
+      height: 80px;
       border-radius: 12px; }
-    .lastsection .carlos_profile li:last-of-type {
+    .lastsection a .carlos_profile {
       padding-left: 20px; }
+      .lastsection a .carlos_profile p {
+        font-family: "Poppins-Regular";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #333333;
+        padding-bottom: 12px; }
+      .lastsection a .carlos_profile small {
+        font-family: "Poppins-Regular";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #828282; }
+
+@media (min-width: 720px) {
+  .lastsection {
+    max-width: 85%;
+    margin: auto; }
+    .lastsection a .carlos_profile {
+      padding-left: 40px; } }
 
 .masthead {
   padding-left: 16px;
