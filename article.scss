@@ -40,7 +40,7 @@
         max-width: 300px;
         display: flex;
         flex-direction: row;
-        padding: 10px 16px;
+        padding: 12px 16px;
         .form_input--email {
             font-family: "Poppins-Regular";
             font-style: normal;
@@ -55,8 +55,8 @@
         }
         .form_button {
             position: absolute;
-            top: 1px;
-            right: 1px;
+            top: 3px;
+            right: 3px;
             border: none;
             outline: none;
             padding: 10px 20px;

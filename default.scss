@@ -24,3 +24,12 @@ body {
     }
 }
 
+@media(min-width: 720px) {
+    body {
+        main {
+            max-width: 1240px;
+            margin: auto;
+        }
+    }
+
+}
